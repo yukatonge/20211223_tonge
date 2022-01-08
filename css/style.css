@@ -1,7 +1,9 @@
 
 .container{
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
+  
+  overflow: hidden;
 }
 a{
   text-decoration: none;
@@ -16,7 +18,7 @@ a{
 }
 .header{
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,9 +81,11 @@ span{
   font-weight: 600;
   margin-bottom: 2rem;
 }
-ul{
+.news-border{
   width: 80%;
   max-width: 800px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 } 
 .news-list{
     display: flex;
@@ -97,7 +101,7 @@ ul{
 }
 .about{
   background-color: #e3e1e1;
-  max-width: 1400px;
+  max-width: 1500px;
   width: 100%;
   height: 450px;
   margin: 100px auto;
@@ -136,7 +140,7 @@ img{
   overflow: auto;
 }
 .service{
-  max-width: 1400px;
+  max-width: 1500px;
 }
 .service-ttl-1{
   font-family: "Indie Flower", cursive;
@@ -173,10 +177,17 @@ img{
   grid-row: 2/3;
   background: #a97189;
 }
-.box-img{
+.box-img-1{
   width: 30%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.box-img-2{
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  
 }
 .box-ttl-1{
   font-size: 1rem;
@@ -200,9 +211,9 @@ img{
 }
 .blog{
   background-color: #e3e1e1;
-  max-width: 1400px;
+  max-width: 1500px;
   width: 100%;
-  height: 440px;
+  height: 600px;
   margin: 100px auto;
 
 }
@@ -212,6 +223,7 @@ img{
   font-size: 2rem;
   margin-top: 100px;
   margin-left: 200px;
+  padding-top: 50px;
 }
 .blog-ttl-2{
   font-size: 1.5rem;
@@ -226,13 +238,12 @@ img{
 .blog-card{
   width: 20%;
   box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
-  float: left;
-
+  background-color: white;
+  border-radius: 20px;
 }
 .card-img img{
   width: 100%;
   border-radius: 20px 20px 0 0;
-  margin-bottom: 100px;
 }
 .card-content{
   padding: 15px 25px;
@@ -250,6 +261,7 @@ img{
 .card-tag{
   color: gray;
   display: inline-block;
+  margin-bottom: 2rem;
 }
 .card-date{
   color: gray;
@@ -257,7 +269,30 @@ img{
   margin-right: 5rem;
 }
 .blog-btn{
+  width: 200px;
+  padding: 20px 0;
+  color: maroon;
+  border-radius: 30px;
+  background: white;
+  text-align: center;
+  margin: 50px auto 0;
   display: block;
+  border: 1px solid;
 }
-
-
+.company{
+  max-width: 1500px;
+}
+.company-ttl-1{
+  font-family: "indie flower", cursive;
+  color:maroon;
+  font-size: 2rem;
+  margin-top: 100px;
+  margin-left: 200px;
+  padding-top: 50px
+}
+.company-ttl-2{
+  font-size: 1.5rem;
+  color: #505050;
+  margin-left: 200px;
+  margin-bottom: 30px;
+}
