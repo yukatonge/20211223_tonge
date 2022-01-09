@@ -84,13 +84,14 @@ span{
 .news-border{
   width: 80%;
   max-width: 800px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
 } 
 .news-list{
     display: flex;
     padding: 15px 10px;
     border-bottom: 1px solid gray;
+    margin-bottom: 5px;
   }
 .label{
   background-color: maroon;
@@ -171,43 +172,57 @@ img{
   grid-column: 2/4;
   grid-row: 1/2;
   background: #bf4d7e;
+  display: flex;
 }
 .box3{
   grid-column: 2/4;
   grid-row: 2/3;
   background: #a97189;
+  display: flex;
 }
 .box-img-1{
   width: 30%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.box-img-2{
-  width: 30%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: inline-block;
-  
-}
-.box-ttl-1{
-  font-size: 1rem;
+.box1-ttl{
   font-weight: bolder;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
-.box-text-1{
+.box1-text{
   font-size: 0.8rem;
   text-align: center;
 }
-.box-ttl-2{
-  font-size: 1rem;
-  font-weight: bolder;
-  margin-bottom: 15px;
+.box2-img{
+  width: 20%;
+  margin: 10px 30px; 
 }
-.box-text-2::before{
-  content: "";
-  background: url(../img/service__first.svg);
-  top: 5px;
-  left: 0;
+.box2-content{
+  font-size: 1rem;
+  margin: 40px 30px; 
+  display: inline-block;
+}
+.box2-ttl{
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.box2-text{
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 100;
+}
+.box3-img{
+  width: 20%;
+  margin: 10px 30px; 
+}
+.box3-content{
+  font-size: 1rem;
+  margin: 40px 30px; 
+  display: inline-block;
+}
+.box3-ttl{
+  font-weight: bolder;
+  margin-bottom: 20px;
 }
 .blog{
   background-color: #e3e1e1;
@@ -233,7 +248,7 @@ img{
 }
 .blog-item{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .blog-card{
   width: 20%;
@@ -244,17 +259,24 @@ img{
 .card-img img{
   width: 100%;
   border-radius: 20px 20px 0 0;
+  position: relative;
+}
+.card-cat{
+  position: absolute;
+  background-color: #c11f65;
+  color: white;
+  padding: 10px;
 }
 .card-content{
   padding: 15px 25px;
 }
 .card-ttl{
-  font-size: 13px;
+  font-size: 1rem;
   margin-bottom: 30px;
   color: gray
 }
 .tag{
-  font-size: 12px;
+  font-size: 0.8rem;
   display: flex;
   vertical-align: middle;
 }
@@ -295,4 +317,21 @@ img{
   color: #505050;
   margin-left: 200px;
   margin-bottom: 30px;
+}
+table{
+  width: 60%;
+  border-collapse: collapse;
+  margin-left: 20%;
+  color: gray;
+}
+table th,
+table td{
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+table th{
+  background-color: #f2efef;
+  font-weight: bolder;
+  text-align: left;
+  
 }
