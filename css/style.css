@@ -259,10 +259,13 @@ img{
 .card-img img{
   width: 100%;
   border-radius: 20px 20px 0 0;
+}
+.card-img{
   position: relative;
 }
 .card-cat{
-  position: absolute;
+  top: 0; 
+  left: 0;
   background-color: #c11f65;
   color: white;
   padding: 10px;
@@ -333,5 +336,51 @@ table th{
   background-color: #f2efef;
   font-weight: bolder;
   text-align: left;
+}
+.wrapper{
+  display: flex;
+  margin-top: 50px;
+}
+.img-recruit{
+  position: relative;
+  background: url(../img/recruit.png) no-repeat center/cover;
+  height: 30vh;
+  width: 50vw;
+}
+.img-recruit-ttl{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 1.5rem;
+ color: #fff;
+}
+.img-int{
+  position: relative;
+  background: url(../img/interview.png) no-repeat center/cover;
+  height: 30vh;
+  width: 50vw;
+}
+.img-int-ttl{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 1.5rem;
+ color: #fff;
+}
+.cta-ttl{
+  font-size: 1rem;
+  color: gray;
+  font-weight: bolder;
+  margin-top: 30px;
+  text-align: center;
+}
+.v_line{
+  margin-left: 50%;
+  width: 2px;
+  height: 50px;
+  background-color: maroon;
+  margin-top: 20px;
   
 }
