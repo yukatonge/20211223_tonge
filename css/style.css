@@ -286,9 +286,8 @@ img{
 }
 .tag{
   font-size: 0.8rem;
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
-  flex-wrap: wrap;
 }
 .card-tag{
   color: gray;
@@ -297,6 +296,7 @@ img{
 .card-date{
   color: gray;
   margin-right: 5rem;
+  display: inline;
 }
 .blog-btn{
   width: 200px;
